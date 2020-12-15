@@ -1,0 +1,450 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>article</title>
+  
+  
+  
+  
+<style>
+/* 폰트 */
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+html {
+  font-family: 'LotteMartDream', sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li, h1, h2, h3 {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+/* 라이브러리 */
+.flex {
+  display:flex;
+}
+
+.flex-jc-c {
+  justify-content:center;
+}
+
+.flex-ai-c {
+  align-items:center;
+}
+
+.flex-wrap {
+  flex-wrap:wrap;
+}
+
+.flex-column {
+  flex-direction:column;
+}
+
+.flex-grow-1 {
+  flex-grow:1;
+}
+
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.min-height-100vh {
+  min-height:100vh;
+}
+
+.bg-pink {
+  background-color:pink;
+}
+
+.bd-green {
+  border:10px solid green;
+}
+
+.bg-red {
+  background-color:red;
+}
+
+.bg-blue {
+  background-color:blue;
+}
+
+.height-100p {
+  height:100%;
+}
+
+.block {
+  display:block;
+}
+
+/* 커스텀 */
+:root {
+  --article-list__cell-id__width:100px;
+  --article-list__cell-reg-date__width:220px;
+  --article-list__cell-writer__width:150px;
+  --article-list__cell-title__width:calc(100% - var(--article-list__cell-id__width) - var(--article-list__cell-reg-date__width) - var(--article-list__cell-writer__width));
+}
+.con-min-width {
+  min-width:1200px;
+}
+
+.con {
+  width:1200px;
+}
+
+/* 로고 시작 */
+.logo {
+  font-size:4rem;
+}
+
+.logo > span {
+  margin-left:10px;
+}
+
+.logo > span > span {
+  color:red;
+}
+
+.logo--mini {
+  font-size:2rem;
+}
+/* 로고 끝 */
+
+/* 로고바 시작 */
+.logo-bar {
+  background-color:black;
+  color:white;
+  height:150px;
+}
+/* 로고바 끝 */
+
+/* 메뉴바 시작 */
+.menu-bar {
+  background-color:black;
+  color:white;
+}
+
+.menu-bar__menu-1 > ul > li {
+  width:25%;
+  position:relative;
+}
+
+.menu-bar__menu-1 ul > li > a {
+  text-align:center;
+  padding:20px 0;
+}
+
+.menu-bar__menu-1 ul > li:hover > a {
+  
+  background-color:white;
+  z-index:1;
+  color:black;
+}
+
+.menu-bar__menu-1 > ul > li > a {
+  border-radius:10px 10px 0 0;
+}
+
+.menu-bar__menu-1 > ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:-10px;
+  width:100%;
+  background-color:black;
+  border:10px solid black;
+  border-top-width:0;
+  border-radius:0 0 20px 20px;
+  z-index:10;
+  font-size:1.5rem;
+}
+.menu-bar__menu-1> ul ul i{
+	margin-right:10px;
+}
+
+.menu-bar__menu-1 > ul > li:hover > ul {
+  display:block;
+}
+
+.menu-bar__menu-1 > ul ul > li:last-child > a {
+  border-radius:0 0 10px 10px;
+}
+/* 메뉴바 끝 */
+
+/* 타이틀바 시작 */
+.title-bar {
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+.title-bar h1{
+  margin-bottom:10px;
+}
+.title-bar h1 i{
+  margin-right:1px;
+}
+/* 타이틀바 끝 */
+
+/* 하단바 시작 */
+.bottom-bar {
+  margin-top:30px;
+  background-color:black;
+  color:white;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.bottom-bar__site-info {
+  margin-left:20px;
+}
+main > .hyperlink_page{
+  text-align:center;
+  
+}
+main> .hyperlink_page li{
+ display:inline-block;
+  margin:0 20px;
+  
+  
+}
+main> .hyperlink_page li a{
+  
+  padding:0 10px;
+  font-size:1.2rem;
+  border:1px solid transparent;
+}
+
+main> .hyperlink_page li:hover a{
+  border-color:#aaaaaa;
+}
+/* 리스트 */
+
+.article-list > * > div::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.article-list > header > div > div {
+  position:relative;
+}
+
+.article-list > header > div > div:not(:last-child)::after {
+  content:"";
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  right:0;
+  width:1px;
+  height:10px;
+  background-color:black;
+}
+
+.article-list > * > div > div {
+  float:left;
+  box-sizing:border-box;
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.article-list__cell-id {
+  width:var(--article-list__cell-id__width);
+}
+
+.article-list__cell-reg-date {
+  width:var(--article-list__cell-reg-date__width);
+}
+
+.article-list__cell-writer {
+  width:var(--article-list__cell-writer__width);
+  
+}
+
+.article-list__cell-title {
+  width:var(--article-list__cell-title__width);
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+.article-list > main .article-list__cell-title {
+  text-align:left;
+  padding-left:10px;
+}
+
+.article-list > main > div {
+  border-top:1px solid black;
+}
+
+.below_button {
+  justify-content:center;
+  
+}
+.below_button a{
+  font-weight:bold;
+  margin:0 20px;
+}
+.below_button a:hover{
+  text-decoration:underline;
+}
+/* 상세 게시물 바디 */
+.article_body{
+ 
+}
+.article_body > div:not(:last-child){
+  border-bottom:1px solid black;
+}
+.article_body>div:last-child{
+  border:1px solid black;
+  border-top:0;
+}
+.article_body >div:first-child{
+font-weight:bold;
+  font-size:1.2rem;
+  }
+/* 상세 게시물 바디 */
+</style>
+
+  
+  
+  
+  
+
+</head>
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<div class="body-content min-height-100vh flex flex-column">
+  <!-- 로고바 시작 -->
+  <header class="logo-bar con-min-width">
+    <div class="con height-100p flex flex-jc-c">
+      <a href="#" class="logo flex flex-ai-c">
+        <i class="fab fa-jenkins"></i>
+        <span>
+          Develo<span>p</span>ers
+        </span>
+      </a>
+    </div>
+  </header>
+  <!-- 로고바 끝 -->
+
+  <!-- 메뉴바 시작 -->
+  <header class="menu-bar con-min-width">
+    <div class="con height-100p">
+      <nav class="menu-bar__menu-1">
+        <ul class="flex">
+          <li>
+            <a href="./" class="block">
+              <i class="fas fa-home"></i>
+              <span>HOME</span>
+            </a>
+          </li>
+          <li>
+            <a class="block">
+              <i class="fas fa-list"></i>
+              <span>ARTICLES</span>
+            </a>
+            <ul>
+              <li><a href="/./work/work/mysql-text-board/exportHtml/free/freelist-1.html" class = "block"><i class="fas fa-smile"></i><span>free</span></a></li><li><a href="/./work/work/mysql-text-board/exportHtml/info/infolist-1.html" class = "block"><i class="fas fa-info"></i><span>info</span></a></li> 
+            </ul>
+          </li>
+          <li>
+            <a class="block">
+              <i class="fas fa-link"></i>
+              <span>LINK</span>
+            </a>
+            <ul>
+              <li>
+                <a href="https://nampnd.tistory.com/" target="_blank" class="block">
+                  <i class="fab fa-blogger-b"></i>
+                  <span>BLOG</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/dackachki" target="_blank" class="block">
+                  <i class="fab fa-github"></i>
+                  <span>GITHUB</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="stat.html" class="block">
+              <i class="fas fa-chart-pie"></i>
+              <span>STATISTICS</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 메뉴바 끝 -->
+
+  <main class="flex-grow-1">
+    <section class="title-bar con-min-width">
+     	<section class ="title-bar con-min-width"><h1 class="con"><i class="fas fa-smile"></i>free게시판  96번 게시물</h1><div class="con">
+    
+        <div class="con article_body"><div>제목 : 제목_956</div><div>날짜 : 2020-12-15 11:45:58</div><div>작성자 : user2</div><div>번호 : 96</div><div>내용 : 내용_870</div></div><br><br>
+
+      
+
+<div class="below_button flex"><div><a href="free_94.html">이 전 글</a></div>
+<div><a href="free_98.html">다 음 글</a></div><div><a href="freelist-1.html">목 록</a></div>
+</div></div></section></main> 
+  <footer class="bottom-bar con-min-width">
+    <div class="con flex flex-ai-c">
+      <a href="#" class="logo logo--mini flex flex-ai-c">
+        <i class="fab fa-jenkins"></i>
+        <span>
+          Develo<span>p</span>ers
+        </span>
+      </a>
+
+      <div class="bottom-bar__site-info">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos ipsum necessitatibus doloremque quos voluptate debitis earum aut a consequuntur explicabo deleniti qui eius facere, harum error eveniet vel laudantium.
+      </div>
+    </div>
+  </footer>
+</div>
+  
+
+</body>
+
+</html>
+ 
