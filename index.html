@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+<!--Open Graph-->
+<meta property="og:title" content="초보 개발자의 블로그" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+<meta property="og:site_name" content=”My_Blog” />
+<meta property="og:url" content=”blog.lla.kr” />
+<meta property="og:description" content="계속 개발중인 개인 블로그 입니다." />
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6S0XBXH3KP"></script>
 <script>
@@ -97,12 +105,50 @@
 		</header>
 		<!-- 메뉴바 끝 -->
 
-		<main class="flex-grow-1">
+		<main class="flex-grow-1" id="mpart">
 			<section class="title-bar con-min-width">
 				<h1 class="con">
 					<i class="fas fa-home"></i> <span>HOME</span>
 				</h1>
 			</section><section class="section-1 con-min-width">
+				<nav class="side-bar">
+					<selector>배경 변경</selector>
+					<ul>
+					  <li>
+						<a href="#" onclick="setBackground(1)">Daily Photo 1번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(2)">Daily Photo 2번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(3)">Daily Photo 3번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(4)">Daily Photo 4번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(5)">Daily Photo 5번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(6)">Daily Photo 6번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(7)">Daily Photo 7번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(8)">Daily Photo 8번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(9)">Daily Photo 9번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(10)">Daily Photo 10번</a>
+					  </li>
+					  <li>
+						<a href="#" onclick="setBackground(0)">초기화</a>
+					  </li>
+					</ul>  
+				  </nav>
 	<div class="con"<div class="con">
 		<h1>공지사항</h1>
 		  <ul>
@@ -122,7 +168,7 @@
 	  <div class="slideshow-container">
 		  
 	
-	  <div class="mySlides fade">
+	  <div class="mySlides fade" style="display:block">
 	  <div class="numbertext">1 / 10</div>
 	  <img src="downloads/1.jpg" style="width:100%">
 	  
