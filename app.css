@@ -337,7 +337,7 @@ font-weight:bold;
 .side-bar{
   height:270px;
   width:200px;
-  background-color:rgba(82, 177, 180, 0.8);
+  background-color:rgba(255, 255, 255, 0.8);
   left:-170px;
    z-index:10;
   text-align:center;
