@@ -197,6 +197,15 @@ a {
   margin-right:1px;
 }
 /* 타이틀바 끝 */
+#clock{
+  color:white;
+  left: 10%;
+  position: absolute;
+  top: 5%;
+  background-color: gray;
+
+}
+
 
 /* 하단바 시작 */
 .bottom-bar {

@@ -18,6 +18,20 @@
 
   gtag('config', 'G-6S0XBXH3KP');
 </script>
+<!--시계-->
+<script>
+	setInterval(function(){
+		 
+		var timer = new Date();
+		var h = timer.getHours();
+		var m = timer.getMinutes();
+		var s = timer.getSeconds();
+		document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+	},1000);
+</script>
+
+
+
 <!-- 네이버 서치어드바이저 -->
 <meta name="naver-site-verification" content="385dd4bdf0b565c2f85a8689586a9f29ebdab2dc" />
 
@@ -31,23 +45,40 @@
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="app.css" />
+<link rel="stylesheet" href="clock.css" />
 
 <meta name="google-site-verification" content="yZs9T3j7BocAR4zWWZiyXrThcbLbmEjl3SMaGahpDQw" />
 </head>
 
 <body>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+
 	<script src="app.js"></script>
+	<script src="clock.js"></script>
+	
 	<div class="body-content min-height-100vh flex flex-column">
 		<!-- 로고바 시작 -->
+		
 		<header class="logo-bar con-min-width">
+			<div>
+			<h1 id="clock">
+				
+			</h1>
+		</div>
 			<div class="con height-100p flex flex-jc-c">
+				
 				<a href="./index.html" class="logo flex flex-ai-c">
+						
 					<i class="fab fa-jenkins"></i>
 					<span>
 						Develo<span>p</span>ers
 					</span>
 				</a>
+				
 			</div>
+		
+		
 		</header>
 		<!-- 로고바 끝 -->
 
@@ -105,6 +136,7 @@
 			</div>
 		</header>
 		<!-- 메뉴바 끝 -->
+		
 
 		<main class="flex-grow-1" id="mpart">
 			<section class="title-bar con-min-width">

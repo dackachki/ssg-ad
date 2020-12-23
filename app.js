@@ -16,6 +16,18 @@ function ArticleDetail__Body__init() {
 
 ArticleDetail__Body__init();
 
+setInterval(function(){         
+            var timer = new Date();
+            var h = timer.getHours();
+            var m = timer.getMinutes();
+            var s = timer.getSeconds();
+ document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;},1000);
+
+
+
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -51,21 +63,3 @@ function setBackground(n){
   document.getElementById("mpart").style.backgroundImage= `url('${url}')`;
   
 }
-/*
-
-	window.onclick = function(){
-
-		var background_img = "/background/img_"; 
-
-		var number = Math.floor(Math.random() * 16) + 1;
-
-		var container = document.getElementById("container");
-
-		
-
-		background_img += number + ".jpg";
-
-		container.style.backgroundImage = "url('" + background_img + "')";
-
-  }
-  */
