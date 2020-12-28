@@ -371,11 +371,13 @@ img {vertical-align: middle;}
 .slideshow-container {
   width: 400px;
   height:400px;
-  
   position: relative;
   margin: auto;
 }
-
+.slideshow-container img{
+  width: 400px;
+  height:400px;
+}
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
