@@ -122,7 +122,11 @@ a {
   font-size:2rem;
 }
 /* 로고 끝 */
-
+#clock{
+  position:absolute;
+  top:5%;
+  left:20%;
+}
 /* 로고바 시작 */
 .logo-bar {
   background-color:black;
@@ -197,19 +201,10 @@ a {
   margin-right:1px;
 }
 /* 타이틀바 끝 */
-#clock{
-  color:white;
-  left: 10%;
-  position: absolute;
-  top: 5%;
-  background-color: gray;
-
-}
-
 
 /* 하단바 시작 */
 .bottom-bar {
-  margin-top:0px;
+  
   background-color:black;
   color:white;
   padding-top:30px;
@@ -219,13 +214,10 @@ a {
 .bottom-bar__site-info {
   margin-left:20px;
 }
-main{
-  color: white;
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- background-image: url("downloads/0.jpg");
- 
+.mainbg{
+  background: url(0.jpg);
+  background-size: cover;
+  background-position: center;
 }
 main > .hyperlink_page{
   text-align:center;
@@ -317,8 +309,18 @@ main> .hyperlink_page li:hover a{
 .below_button a:hover{
   text-decoration:underline;
 }
+.top_logo{
+  height: 150px;
+  width: 150px;
+}
+.bot_logo{
+  height: 100px;
+  width: 100px;
+}
 /* 상세 게시물 바디 */
-
+.article_body{
+ 
+}
 .article_body > div:not(:last-child){
   border-bottom:1px solid black;
 }
@@ -330,6 +332,19 @@ main> .hyperlink_page li:hover a{
 font-weight:bold;
   font-size:1.2rem;
   }
+
+.article_body__title {
+	font-size: 1.2rem;
+	padding-top: 0;
+}
+
+.article_body_sub-info>div {
+	margin-right: 30px;
+}
+
+.article-body_menu>a {
+	margin-right: 15px;
+}
 
 .article_body__title {
 	font-size: 1.2rem;
@@ -477,7 +492,4 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-
-
 Resources1×0.5×0.25×Rerun
-
