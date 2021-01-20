@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+<script data-ad-client="ca-pub-9860818014343845" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 네이버 서치어드바이저 -->
+<meta name="naver-site-verification" content="385dd4bdf0b565c2f85a8689586a9f29ebdab2dc" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6S0XBXH3KP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6S0XBXH3KP');
+</script>
+
+  <meta charset="UTF-8">
+  
+
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+
+
+  <title>My Blog</title>
+  
+  <link rel="stylesheet" href="app.css" />
+  
+<meta name="google-site-verification" content="yZs9T3j7BocAR4zWWZiyXrThcbLbmEjl3SMaGahpDQw" />
+
+<meta property="og:title" content="초보 개발자의 블로그" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" />
+<meta property="og:site_name" content=”My_Blog” />
+<meta property="og:url" content=”blog.lla.kr” />
+<meta property="og:description" content="계속 개발중인 개인 블로그 입니다." />
+
+
+</head>
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+<div class="body-content min-height-100vh flex flex-column">
+  <!-- 로고바 시작 -->
+  <header class="logo-bar con-min-width">
+  <script src="app.js"></script>
+  <div>
+			<h1 id="clock">
+				
+			</h1>
+			</div>
+    <div class="con height-100p flex flex-jc-c">
+      <a href="../index.html" class="logo flex flex-ai-c">
+        
+        <span>
+          <img src="logo.png" alt="" class="top_logo">
+        </span>
+      </a>
+    </div>
+  </header>
+  <!-- 로고바 끝 -->
+
+  <!-- 메뉴바 시작 -->
+  <header class="menu-bar con-min-width">
+    <div class="con height-100p">
+      <nav class="menu-bar__menu-1">
+        <ul class="flex">
+          <li>
+            <a href="../index.html" class="block">
+              <i class="fas fa-home"></i>
+              <span>HOME</span>
+            </a>
+          </li>
+          <li>
+            <a class="block">
+              <i class="fas fa-list"></i>
+              <span>ARTICLES</span>
+            </a>
+            <ul>
+              [Board_List_Part] 
+            </ul>
+          </li>
+          <li>
+            <a class="block">
+              <i class="fas fa-link"></i>
+              <span>LINK</span>
+            </a>
+            <ul>
+              <li>
+                <a href="https://nampnd.tistory.com/" target="_blank" class="block">
+                  <i class="fab fa-blogger-b"></i>
+                  <span>BLOG</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/dackachki" target="_blank" class="block">
+                  <i class="fab fa-github"></i>
+                  <span>GITHUB</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="stat.html" class="block">
+              <i class="fas fa-chart-pie"></i>
+              <span>STATISTICS</span>
+            </a>
+          </li>
+          	<li>
+							<a href="./search.html" class="block">
+							<i class="fas fa-search"></i>
+								<span>Search</span>
+							</a>
+						</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- 메뉴바 끝 -->
+<body>
+
+<!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+
+  <div class="flex-grow-1 mainbg main">
+    <section class="title-bar con-min-width">
+
+<!-- lodash 불러오기 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+
+<!-- vue 불러오기 -->
+<!-- 개발버전, 도움되는 콘솔 경고를 포함. -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<section id="article-list-wrap" class="section-1 con-min-width">
+	<div class="con">
+		<div class="article-search">
+			<form class="block">
+				<input @input="searchKeywordInputed" type="text" placeholder="검색어"
+					:value="searchKeyword">
+			</form>
+		</div>
+		<div class="article-list">
+			<header>
+				<div>
+					<div class="article-list__cell-id">번호</div>
+					<div class="article-list__cell-reg-date">날짜</div>
+					<div class="article-list__cell-writer">작성자</div>
+					<div class="article-list__cell-title">제목</div>
+				</div>
+			</header>
+			<div class="main">
+				<div v-for="article in filtered">
+					<div class="article-list__cell-id">{{article.id}}</div>
+					<div class="article-list__cell-reg-date">{{article.regDate}}</div>
+					<div class="article-list__cell-writer">{{article.writer}}</div>
+					<div class="article-list__cell-title">
+						<a :href="'article_' + article.id + '.html'" target="_blank"
+							class="hover-underline">{{article.title}}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script src="article_search.js"></script>
+ 
+<footer class="bottom-bar con-min-width">
+	<div class="con flex flex-ai-c">
+		<a href="#" class="logo logo--mini flex flex-ai-c">
+			
+			<span>
+				<img src="logo.png" alt="" class="bot_logo"> 	
+			</span>
+		</a>
+
+		<div class="bottom-bar__site-info"> 2020 CopyRight All Rights Reserved?</div>
+	</div>
+</footer>
+</div>
+</body>
+</html>

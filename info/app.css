@@ -239,6 +239,14 @@ main> .hyperlink_page li a{
 main> .hyperlink_page li:hover a{
   border-color:#aaaaaa;
 }
+/* 검색창 */
+.article-search >form{
+	display:flex;
+	justify-content:flex-end;
+}
+
+/* 검색창 끝*/
+
 /* 리스트 */
 
 .article-list > * > div::after {
@@ -383,6 +391,14 @@ font-weight:bold;
   
   
 }
+/* tag 관련 */
+.tag a{
+ color:blue;
+}
+.tag a:hover{
+	text-decoration:underline;
+}
+
 /* 이미지 박스 */
 HTML CSS JSResult Skip Results Iframe
 EDIT ON
